@@ -1,0 +1,46 @@
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: black;
+    text-align: center;
+    color:white;
+}
+
+.heading{
+    margin:20px;
+    padding:5px;
+    font-size: larger;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.meals{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding:30px;
+   
+}
+.meal-card{
+    width:400px;
+    padding:20px;
+    border:2px solid white;
+    border-radius:10px;
+    font-size:24px;
+    text-align:center;
+    margin:10px;
+}
+
+.box button{
+    border-radius: 5px;
+    padding:10px 15px;
+    margin:50px;
+    font-size:26px;
+    
+}
