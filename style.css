@@ -2,45 +2,77 @@
     padding:0;
     margin:0;
 }
-body{
-    background-color: black;
-    text-align: center;
-    color:white;
-}
 
-.heading{
-    margin:20px;
-    padding:5px;
-    font-size: larger;
+/* =====================INDEX PAGE===================== */
+body{
+    background-color:#FAEEDA;
+    text-align: center;
 }
-.box{
-    display: flex;
-    flex-direction: column;
+.container{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
+}
+img{
+    height:180px;
+    width:180px;
+    border-radius:40px;
+    margin-bottom: 20px ;
+}
+.appName{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 38px ;
+    color:#633806;
+    font-weight: 500;
+    margin-bottom: 15px;
     
+  
 }
-.meals{
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    padding:30px;
-   
-}
-.meal-card{
-    width:400px;
-    padding:20px;
-    border:2px solid white;
-    border-radius:10px;
-    font-size:24px;
-    text-align:center;
-    margin:10px;
+.tagLine{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 23px ;
+    color:#854F0B;
+    font-weight: 400;
+    margin-bottom:50px;
 }
 
-.box button{
-    border-radius: 5px;
-    padding:10px 15px;
-    margin:50px;
-    font-size:26px;
-    
+#btn1{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    background-color:#BA7517 ;
+    color:#FEF9F0;
+    padding:14px;
+    gap:20px;
+    border:none;
+    border-radius: 8px;
+    height:70px;
+    width:450px;
+    margin-bottom: 30px;
 }
+#btn2{
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    border-color:#BA7517;
+    color:#BA7517;
+    padding:14px;
+    border-radius:8px;
+    height:70px;
+    width:450px;
+    background-color: #FAEEDA;
+}
+#btn1:hover {
+    background-color: #854F0B;
+    cursor: pointer;
+}
+
+#btn2:hover {
+    background-color: #f0d9b5;
+    cursor: pointer;
+}
+
+/* ====================CREATE PAGE=====================*/
