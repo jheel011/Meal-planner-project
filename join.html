@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Join Your Family</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class = "page-join">
     
+    <div class="joinContainer">
+        <nav class ="back" onclick="window.location.href='index.html'">
+            ← Back
+        </nav>
+
+        <div class="join-heading">
+            <div id="join-main-heading">
+            Join your family
+            </div>
+            
+            <div id="join-sub-heading">
+            Enter your family code 
+            </div>
+        </div>
+
+        <form class="join-form">
+
+            <div class="fam_code">
+                <label for="fam_Code">Family Code</label>
+                
+                <input type="text" placeholder="eg. S H R M 4 9" id ="fam_Code">
+            </div>
+
+            <div class="your_Name">
+                <label for="your_Name">Your Name</label>
+                
+                <input type="text" id="your_Name" >
+            </div>            
+
+            <div class="your_role">
+                <label for="your_Role">Your Role</label>
+                <select id = "your_Role">
+                    <option value="cook">👑 Cook</option>
+                    <option value="member">👨‍👩‍👧 Member</option>
+                </select>
+            </div>
+
+            <div class="join_fam_button" >
+                <button type = button > Join Family →</button> 
+            </div>
+
+        </form>
+    </div>
+     <script src = "script.js"></script>
 </body>
 </html>

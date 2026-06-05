@@ -1,11 +1,7 @@
 document.addEventListener("DOMContentLoaded",function(){
 
     const createFamBtn = document.querySelector('.create_fam_button button');
-
-
-
-
-
+    const joinFamBtn = document.querySelector('.join_fam_button button');
 
 
     function createFamily (e) {
@@ -24,7 +20,7 @@ document.addEventListener("DOMContentLoaded",function(){
         console.log(yourName);
         console.log(yourRole);
 
-        const code = familyName.slice(4,8).toUpperCase() + Math.floor(Math.random()*100);
+        const code = familyName.slice(0,4).toUpperCase() + Math.floor(Math.random()*100);
 
         localStorage.setItem('familyCode',code);
         localStorage.setItem('familyName',familyName);
@@ -36,9 +32,35 @@ document.addEventListener("DOMContentLoaded",function(){
         document.getElementById('hidden').style.display = 'block';
     }
     
-    createFamBtn.addEventListener('click',createFamily);
+
+    function joinFamily(event){
+        event.preventDefault();
+
+        const famCode = document.getElementById('fam_Code').value;
+        const userName= document.getElementById('your_Name').value;
+        const userRole = document.getElementById('your_Role').value;
+
+        const savedCode = localStorage.getItem('familyCode');
+
+        if(famCode === savedCode){
+            localStorage.setItem('userName', userName);
+            localStorage.setItem('userRole', 'member');
+            window.location.href ="home.html";
+        }else if(famCode ===''|| userName===''){
+            alert('Fill your details!')
+        }
+        else{
+            alert('Invalid Family Code! Please check and try again!')
+        }
+    }
 
 
+    if (createFamBtn) {
+        createFamBtn.addEventListener('click', createFamily);
+    }
 
+    if (joinFamBtn) {
+        joinFamBtn.addEventListener('click', joinFamily);
+    }
 
 })

@@ -7,14 +7,16 @@ body{
     background-color: #FAEEDA;
     
 }
+
+
+/* =====================INDEX PAGE===================== */
+
+
 .page-index{
     padding:0;
     margin:0;
     text-align: center;
 }
-
-/* =====================INDEX PAGE===================== */
-
 .container{
 
     height:100vh;
@@ -36,8 +38,6 @@ img{
     color:#633806;
     font-weight: 500;
     margin-bottom: 15px;
-    
-  
 }
 .tagLine{
     font-family:'Courier New', Courier, monospace;
@@ -46,7 +46,6 @@ img{
     font-weight: 400;
     margin-bottom:50px;
 }
-
 #btn1{
     font-family: sans-serif;
     font-size: 25px;
@@ -83,67 +82,72 @@ img{
     cursor: pointer;
 }
 
-/* ====================CREATE PAGE=====================*/
 
-.page-create{
+/* ================================CREATE PAGE====================================*/
+
+.page-create,
+.page-join{
     padding:3.5rem 2rem;
     text-align: left;
-    
 }
-.createContainer{
+.createContainer,
+.joinContainer{
     max-width:650px;
     width: 100%;
     margin:0 auto;
     display:flex;
     flex-direction: column;
     gap:30px;
-
 }
-.register-form{
+.register-form,
+.join-form{
     display: flex;
     flex-direction: column;
-    
 }
 .back{
     font-size:20px;
     color:#BA7517;
     font-family:sans-serif;
     font-weight: 300;
-    
     cursor: pointer;
 }
 .back:hover{
     color:#854F0B;
-   
 }
-.create-heading{
+
+.create-heading,
+.join-heading{
     display:flex;
     flex-direction: column;
 }
-#main-heading{
+
+#main-heading,
+#join-main-heading{
     color:#633806;
     font-family: serif;
     font-size:40px;
     font-weight:500 ;
     margin-bottom: 8px;
 }
-#sub-heading{
+#sub-heading,
+#join-sub-heading{
     font-size:19px;
     font-weight:400;
     font-family: sans-serif;
     color:#854F0B;
     margin-bottom: 30px;
 }
-.page-create label {
+.page-create label,
+.page-join label{
     display: block;
     font-family:'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: 500;
     color: #633806;
     margin-bottom: 10px;
-    
 }
-.page-create input{
+.page-create input,
+.page-join input{
     border: 2px solid #BA7517;
     border-radius: 8px;
     background: #FEF9F0;
@@ -155,7 +159,8 @@ img{
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
-.page-create select{
+.page-create select,
+.page-join select{
     border: 2px solid #BA7517;
     border-radius: 8px;
     background: #FEF9F0;
@@ -170,7 +175,8 @@ img{
 
 }
 
-.create_fam_button button{
+.create_fam_button button,
+.join_fam_button button{
     padding: 14px;
     border: none;
     border-radius: 8px;
@@ -223,3 +229,4 @@ img{
    
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
+
